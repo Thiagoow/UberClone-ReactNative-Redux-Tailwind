@@ -8,13 +8,13 @@ const data = [
   {
     id: 123,
     title: 'Get a ride',
-    img: 'car.webp',
+    img: require('../assets/img/car.webp'),
     screen: 'MapScreen'
   },
   {
     id: 456,
     title: 'Order food',
-    img: 'food.png',
+    img: require('../assets/img/food.png'),
     screen: 'EatScreen'
   }
 ];
@@ -35,7 +35,7 @@ const NavOptions = () => {
           <View>
             <Image
               style={{ width: 120, height: 120, resizeMode: 'contain' }}
-              source={require('../assets/img/' + item.img)}
+              source={item.img}
             />
 
             <Text style={tw`mt-2 text-lg font-semibold`}>{item.title}</Text>
