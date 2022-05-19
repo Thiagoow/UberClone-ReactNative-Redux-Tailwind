@@ -1,6 +1,7 @@
 import React from 'react';
-import { SafeAreaView, View, Image } from 'react-native';
 import tw from 'twrnc';
+import { SafeAreaView, View, Image } from 'react-native';
+import NavOptions from '../components/NavOptions';
 
 const Home = () => {
   return (
@@ -10,6 +11,8 @@ const Home = () => {
           style={{ width: 100, height: 100, resizeMode: 'contain' }}
           source={require('../assets/img/logo.svg')}
         />
+
+        <NavOptions />
       </View>
     </SafeAreaView>
   );
