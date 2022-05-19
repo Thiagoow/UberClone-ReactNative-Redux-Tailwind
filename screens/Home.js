@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, SafeAreaView, View, Image } from 'react-native';
+import { SafeAreaView, View, Image } from 'react-native';
 import tw from 'twrnc';
 
 const Home = () => {
@@ -16,5 +16,3 @@ const Home = () => {
 };
 
 export default Home;
-
-const styles = StyleSheet.create({});
