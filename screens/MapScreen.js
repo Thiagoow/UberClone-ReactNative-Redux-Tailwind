@@ -1,15 +1,18 @@
 import React from 'react';
 import tw from 'twrnc';
-import { StyleSheet, Text, View } from 'react-native';
+import { View } from 'react-native';
+import Map from '../components/Map';
 
 const MapScreen = () => {
   return (
     <View>
-      <Text>Map</Text>
+      <View style={tw`h-1/2`}>
+        <Map />
+      </View>
+
+      <View style={tw`h-1/2`}></View>
     </View>
   );
 };
 
 export default Map;
-
-const styles = StyleSheet.create({});
