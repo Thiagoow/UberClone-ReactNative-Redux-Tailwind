@@ -7,7 +7,7 @@ import { GOOGLE_MAPS_APY_KEY } from '@env';
 import { useDispatch } from 'react-redux';
 import { setDestination, setOrigin } from '../slices/navSlices';
 
-const Home = () => {
+const HomeScreen = () => {
   const dispatch = useDispatch;
 
   return (
@@ -64,4 +64,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomeScreen;

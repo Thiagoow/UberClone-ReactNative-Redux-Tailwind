@@ -2,7 +2,7 @@ import React from 'react';
 import tw from 'twrnc';
 import { StyleSheet, Text, View } from 'react-native';
 
-const Map = () => {
+const MapScreen = () => {
   return (
     <View>
       <Text>Map</Text>
