@@ -50,8 +50,9 @@ const HomeScreen = () => {
             dispatch(setDestination(null));
           }}
           requestUrl={{
-            useOnPlatform: 'web', // or "all"
-            url: 'https://maps.googleapis.com/maps/api', // or any proxy server that hits https://maps.googleapis.com/maps/api
+            useOnPlatform: 'web',
+            //👇🏽 first url -> Public proxy server that enables CORS requests:
+            url: 'https://cors-proxyserver-thiagoow.herokuapp.com/https://maps.googleapis.com/maps/api',
             headers: {
               Authorization: GOOGLE_MAPS_APY_KEY
             }
