@@ -1,6 +1,5 @@
 import React from 'react';
 import tw from 'twrnc';
-import { StyleSheet, Text, View } from 'react-native';
 import MapView, { Marker } from 'react-native-maps';
 import { useSelector } from 'react-redux';
 import { selectOrigin } from '../slices/navSlices';
@@ -10,6 +9,7 @@ const Map = () => {
 
   return (
     <MapView
+      provider="google"
       style={tw`flex-1`}
       mapType="mutedStandard"
       initialRegion={{
@@ -35,5 +35,3 @@ const Map = () => {
 };
 
 export default Map;
-
-const styles = StyleSheet.create({});
