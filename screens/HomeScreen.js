@@ -8,7 +8,7 @@ import { useDispatch } from 'react-redux';
 import { setDestination, setOrigin } from '../slices/navSlices';
 
 const HomeScreen = () => {
-  const dispatch = useDispatch;
+  const dispatch = useDispatch();
 
   return (
     <SafeAreaView style={tw`bg-white h-full`}>
